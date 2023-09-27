@@ -1,0 +1,12 @@
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\bin\Debug\net6.0\DTOs.deps.json
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\bin\Debug\net6.0\DTOs.dll
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\bin\Debug\net6.0\DTOs.pdb
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.csproj.AssemblyReference.cache
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfoInputs.cache
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfo.cs
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.dll
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\refint\DTOs.dll
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\DTOs.pdb
+C:\Users\zelda\source\repos\StarWarsSessionTracker\DTOs\obj\Debug\net6.0\ref\DTOs.dll

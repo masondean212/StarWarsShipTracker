@@ -1,0 +1,503 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj",
+        "projectName": "Configuration",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj",
+        "projectName": "Contracts.Repository",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj",
+        "projectName": "DTOs",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
+        "projectName": "NHibernate.Setup",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj",
+        "projectName": "Services.Interfaces",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              },
+              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

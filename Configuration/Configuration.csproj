@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts.Repository\Contracts.Repository.csproj" />
+    <ProjectReference Include="..\NHibernate.Setup\NHibernate.Setup.csproj" />
+    <ProjectReference Include="..\Services.Interfaces\Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+</Project>
