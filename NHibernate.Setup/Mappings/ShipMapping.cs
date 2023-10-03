@@ -14,7 +14,13 @@ public class ShipMapping : BaseMapWithName<ShipModel>
         Map(x => x.Intelligence);
         Map(x => x.Wisdom);
         Map(x => x.Charisma);
-        
+        Map(x => x.RolledHitPoints);
+        Map(x => x.CurrentHitPoints);
+        Map(x => x.TemporaryHitPoints);
+        Map(x => x.RolledShieldPoints);
+        Map(x => x.CurrentShieldPoints);
+        Map(x => x.TemporaryShieldPoints);
+
         References(x => x.Size)
             .Column("ShipSizeId")
             .ForeignKey("Id");

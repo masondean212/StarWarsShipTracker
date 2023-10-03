@@ -16,6 +16,12 @@ public class ShipModel : BaseModelWithName
     public virtual int Intelligence { get; set; }
     public virtual int Wisdom { get; set; }
     public virtual int Charisma { get; set; }
+    public virtual int RolledHitPoints { get; set; }
+    public virtual int CurrentHitPoints { get; set; }
+    public virtual int TemporaryHitPoints { get; set; }
+    public virtual int RolledShieldPoints { get; set; }
+    public virtual int CurrentShieldPoints { get; set; }
+    public virtual int TemporaryShieldPoints { get; set; }
     public virtual IEnumerable<ShipFeatureModel> InstalledFeatures { get; set; }
     public virtual IEnumerable<SkillModel> Skills { get; set; }
 }
