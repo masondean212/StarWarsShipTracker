@@ -4,7 +4,8 @@ import _ from 'lodash';
 import { Col, Row } from 'reactstrap';
 import AbilityScores from '../components/AbilityScores';
 import ArmorBonus from '../components/ArmorBonus';
-import Shield from '../components/Shield';
+import HealthOrShields from '../components/HealthOrShields';
+import Weapon from '../components/Weapon';
 
 function Home() {
 
@@ -24,7 +25,7 @@ function Home() {
     <div>
       <h1>{currentShip.name}</h1>
       <Row>
-        <Col>
+        <Col xs="4" className="pb-2">
           <AbilityScores
             abilityScoreList={{
               strength: currentShip.strength,
@@ -39,19 +40,55 @@ function Home() {
         </Col>
         <Col>
           <Row>
-            <ArmorBonus
-              armorPartDetails={currentShip.armor}
-              dexterityScore={currentShip.dexterity} />
+            <Col>
+              <Row>
+                <ArmorBonus
+                  armorPartDetails={currentShip.armor}
+                  dexterityScore={currentShip.dexterity} />
+              </Row>
+            </Col>
+            <Col>Test</Col>
           </Row>
           <Row>
-            <Shield
-              shieldPartDetails={currentShip.shield}
-              //shieldCurrentStats={}
-            />
+            <Col className="px-3">
+              <HealthOrShields
+                partDetails={{
+                  name: currentShip.shield.name,
+                  modifier: currentShip.shield.shieldCapacity
+                }}
+                currentStats={{
+                  currentPoints: currentShip.currentShieldPoints,
+                  rolledPoints: currentShip.rolledShieldPoints,
+                  temporaryPoints: currentShip.temporaryShieldPoints,
+                }}
+                abilityScore={currentShip.strength}
+                type="SHIELD"
+              />
+            </Col>
+            <Col className="px-3">
+              <HealthOrShields
+                partDetails={{
+                  name: currentShip.shield.name,
+                  modifier: 1
+                }}
+                currentStats={{
+                  currentPoints: currentShip.currentHitPoints,
+                  rolledPoints: currentShip.rolledHitPoints,
+                  temporaryPoints: currentShip.temporaryHitPoints,
+                }}
+                abilityScore={currentShip.constitution}
+                type="HIT"
+              />
+            </Col>
           </Row>
+          <Weapon 
+            weaponList={currentShip.weapons}
+            wisdom={currentShip.wisdom}
+            strength={currentShip.strength}/>
         </Col>
-      </Row>
-    </div>)}
+      </Row >
+    </div >)
+  }
   </>);
 }
 

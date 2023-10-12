@@ -36,14 +36,14 @@ function AbilityScore(scoreName, scoreValue, skillList, tier) {
 
     function ProficiencyConvert(level) {
         switch (level) {
-            case 0: return "None";
-            case 1: return "Proficient";
-            case 2: return "Expertise";
+            case 0: return "N";
+            case 1: return "P";
+            case 2: return "E";
         }
     }
 
     return (<Row className="pb-2">
-        <Col xs="2">
+        <Col xs="4">
             <Card body>
                 <Row tag="h2" className="m-auto">
                     {value}
@@ -59,13 +59,13 @@ function AbilityScore(scoreName, scoreValue, skillList, tier) {
                 <table>
                     <tbody>
                         <tr key={0}>
-                            <th style={{ width: "15%" }}>{ProficiencyConvert(savingThrowDetails.proficiency)}</th>
+                            <th style={{ width: "5%" }}>{ProficiencyConvert(savingThrowDetails.proficiency)}</th>
                             <th style={{ width: "5%" }}>{savingThrowDetails.proficiency * profBonus + value}</th>
                             <th style={{ width: "60%" }}>{"Saving Throw"}</th>
                         </tr>
                         {_.map(finalSkillList, (skill, i) =>
                             <tr key={i}>
-                                <td style={{ width: "15%" }}>{ProficiencyConvert(skill.proficiency)}</td>
+                                <td style={{ width: "5%" }}>{ProficiencyConvert(skill.proficiency)}</td>
                                 <td style={{ width: "5%" }}>{skill.proficiency * profBonus + value}</td>
                                 <td style={{ width: "60%" }}>{skill.name}</td>
                             </tr>)}

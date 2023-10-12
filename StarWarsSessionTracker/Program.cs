@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 
 var connectionString = builder.Configuration.GetConnectionString("Connection");
 NHibernateConfiguration.Configure(builder.Services, connectionString);
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 ServiceCollectionRegistry.RegisterScopedServices(builder.Services);
 ServiceCollectionRegistry.RegisterScopedRepositories(builder.Services);
