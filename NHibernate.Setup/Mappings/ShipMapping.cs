@@ -22,27 +22,35 @@ public class ShipMapping : BaseMapWithName<ShipModel>
         Map(x => x.TemporaryShieldPoints);
 
         References(x => x.Size)
-            .Column("ShipSizeId")
+            .Column("SizeId")
             .ForeignKey("Id");
         References(x => x.Armor)
-            .Column("ShipArmorId")
+            .Column("ArmorId")
             .ForeignKey("Id");
         References(x => x.Shield)
-            .Column("ShipShieldId")
+            .Column("ShieldId")
             .ForeignKey("Id");
         References(x => x.Reactor)
-            .Column("ShipReactorId")
+            .Column("ReactorId")
             .ForeignKey ("Id");
         References(x => x.PowerCoupling)
-            .Column("ShipPowerCouplingId")
+            .Column("PowerCouplingId")
             .ForeignKey("Id");
         HasManyToMany(x => x.InstalledFeatures)
             .Table("ShipFeatureCrossReference")
             .ParentKeyColumn("ShipId")
             .ChildKeyColumn("FeatureId");
-        HasManyToMany(x => x.Skills)
-            .Table("ShipSkillCrossreference")
+        HasManyToMany(x => x.Weapons)
+            .Table("ShipWeaponCrossReference")
             .ParentKeyColumn("ShipId")
-            .ChildKeyColumn("SkillId");
+            .ChildKeyColumn("WeaponId");
+        HasMany(x => x.SkillCrossReference)
+            .KeyColumn("ShipId")
+            .Cascade.AllDeleteOrphan()
+            .Inverse();
+        HasMany(x => x.AmmunitionCrossReference)
+            .KeyColumn("ShipId")
+            .Cascade.AllDeleteOrphan()
+            .Inverse();
     }
 }

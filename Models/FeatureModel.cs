@@ -2,7 +2,7 @@
 
 namespace Models;
 
-public class ShipFeatureModel : BaseModelWithName
+public class FeatureModel : BaseModelWithName
 {
     public virtual FeatureTypeModel FeatureType { get; set; }
     public virtual int Grade { get; set; }

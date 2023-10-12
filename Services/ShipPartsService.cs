@@ -41,24 +41,40 @@ public class ShipPartsService : IShipPartsService
     }
     public async Task UpdateDatabaseWeaponsFromApi(IEnumerable<ApiShipWeaponDTO> ApiResults)
     {
-        //_unitOfWork.Begin();
+        _unitOfWork.Begin();
         var categoryModelList = await _componentRepository.GetCategoryListAsync();
         var propertyModelList = await _componentRepository.GetPropertyListAsync();
         foreach (var apiResult in ApiResults)
         {
-            _unitOfWork.Begin();
             var matchingFeature = await _componentRepository.GetWeaponFromName(apiResult.Name);
+            String damage;
+            var damageType = String.Empty;
+            if (apiResult.Damage.Contains(" "))
+            {
+                var spaceLocation = apiResult.Damage.IndexOf(" ");
+                damage = apiResult.Damage.Substring(0, spaceLocation);
+                damageType = apiResult.Damage.Substring(spaceLocation);
+            }
+            else
+            {
+                damage = apiResult.Damage;
+            }
             if (matchingFeature == null)
             {
                 var newWeapon = new WeaponModel()
                 {
                     Name = apiResult.Name,
                     Cost = apiResult.Cost,
-                    Damage = apiResult.Damage,
+                    Damage = damage,
+                    DamageType = damageType,
                     SmallerShip = apiResult.SmallerShip,
                     EquipmentCategory = GetCategory(apiResult.Category, categoryModelList),
-                    Properties = GetWeaponPropertyList(apiResult.Properties, propertyModelList)
+                    PropertiesCrossReference = GetWeaponPropertyList(apiResult.Properties, propertyModelList)
                 };
+                foreach (var property in newWeapon.PropertiesCrossReference)
+                {
+                    property.Weapon = newWeapon;
+                }
                 await _componentRepository.AddOrUpdateWeaponRepository(newWeapon);
             }
             else
@@ -67,19 +83,22 @@ public class ShipPartsService : IShipPartsService
                 matchingFeature.Cost = apiResult.Cost;
                 matchingFeature.Damage = apiResult.Damage;
                 matchingFeature.EquipmentCategory = GetCategory(apiResult.Category, categoryModelList);
-                matchingFeature.Properties = GetWeaponPropertyList(apiResult.Properties, propertyModelList);
+                matchingFeature.PropertiesCrossReference = GetWeaponPropertyList(apiResult.Properties, propertyModelList);
+                foreach (var property in matchingFeature.PropertiesCrossReference)
+                {
+                    property.Weapon = matchingFeature;
+                }
                 await _componentRepository.AddOrUpdateWeaponRepository(matchingFeature);
             }
-            _unitOfWork.Commit();
         }
-        //_unitOfWork.Commit();
+        _unitOfWork.Commit();
     }
-    public IEnumerable<WeaponPropertyModel>? GetWeaponPropertyList(IEnumerable<ApiProperties> apiPropertyList, IEnumerable<EquipmentPropertyModel> fullPropertyModelList)
+    public IEnumerable<WeaponPropertyCrossReferenceModel>? GetWeaponPropertyList(IEnumerable<ApiProperties> apiPropertyList, IEnumerable<EquipmentPropertyModel> fullPropertyModelList)
     {
-        var propertyModelList = new List<WeaponPropertyModel>();
+        var propertyModelList = new List<WeaponPropertyCrossReferenceModel>();
         foreach (var property in apiPropertyList)
         {
-            var newWeaponProperty = new WeaponPropertyModel();
+            var newWeaponProperty = new WeaponPropertyCrossReferenceModel();
             if (property.Name.Contains(" "))
             {
                 if (property.Name.StartsWith("Power"))
@@ -115,16 +134,25 @@ public class ShipPartsService : IShipPartsService
             var matchingFeature = await _componentRepository.GetAmmunitionFromName(apiResult.Name, GetWeapon(apiResult.AssociatedWeapon, weaponModelList));
             if (matchingFeature == null)
             {
-                await _componentRepository.AddOrUpdateAmmunitionRepository(new AmmunitionModel()
+                
+                    
+
+                var newAmmunition = new AmmunitionModel()
                 {
                     Name = apiResult.Name,
                     Cost = apiResult.Cost,
                     Damage = apiResult.Damage,
                     Weight = apiResult.Weight,
+                    SpecialValue = apiResult.Special,
                     EquipmentCategory = GetCategory(apiResult.Category, categoryModelList),
                     LaunchingWeapon = GetWeapon(apiResult.AssociatedWeapon, weaponModelList),
-                    Properties = GetAmmunitionPropertyList(apiResult.Properties, propertyModelList)
-                });
+                    PropertiesCrossReference = GetAmmunitionPropertyList(apiResult.Properties, propertyModelList)
+                };
+                foreach (var property in newAmmunition.PropertiesCrossReference)
+                {
+                    property.Ammunition = newAmmunition;
+                }
+                await _componentRepository.AddOrUpdateAmmunitionRepository(newAmmunition);
             }
             else
             {
@@ -134,16 +162,20 @@ public class ShipPartsService : IShipPartsService
                 matchingFeature.Weight = apiResult.Weight;
                 matchingFeature.EquipmentCategory = GetCategory(apiResult.Category, categoryModelList);
                 matchingFeature.LaunchingWeapon = GetWeapon(apiResult.AssociatedWeapon, weaponModelList);
-                matchingFeature.Properties = GetAmmunitionPropertyList(apiResult.Properties, propertyModelList);
+                matchingFeature.PropertiesCrossReference = GetAmmunitionPropertyList(apiResult.Properties, propertyModelList);
+                foreach (var property in matchingFeature.PropertiesCrossReference)
+                {
+                    property.Ammunition = matchingFeature;
+                }
                 await _componentRepository.AddOrUpdateAmmunitionRepository(matchingFeature);
             }
 
         }
         _unitOfWork.Commit();
     }
-    public IEnumerable<AmmunitionPropertyModel>? GetAmmunitionPropertyList(IEnumerable<ApiProperties> apiPropertyList, IEnumerable<EquipmentPropertyModel> fullPropertyModelList)
+    public IEnumerable<AmmunitionPropertyCrossReferenceModel>? GetAmmunitionPropertyList(IEnumerable<ApiProperties> apiPropertyList, IEnumerable<EquipmentPropertyModel> fullPropertyModelList)
     {
-        var propertyModelList = new List<AmmunitionPropertyModel>();
+        var propertyModelList = new List<AmmunitionPropertyCrossReferenceModel>();
         foreach (var property in apiPropertyList)
         {
             if (property.Name.Contains(" "))
@@ -151,7 +183,7 @@ public class ShipPartsService : IShipPartsService
                 var spacePlace = property.Name.IndexOf(" ");
                 if (property.Name.StartsWith("(Range"))
                 {
-                    propertyModelList.Add(new AmmunitionPropertyModel()
+                    propertyModelList.Add(new AmmunitionPropertyCrossReferenceModel()
                     {
                         Property = GetProperty("Range", fullPropertyModelList),
                         ModifierValue = int.Parse(property.Name.Substring(spacePlace + 1, property.Name.IndexOf("/") - spacePlace - 1))
@@ -159,16 +191,16 @@ public class ShipPartsService : IShipPartsService
                 }
                 else
                 {
-                    propertyModelList.Add(new AmmunitionPropertyModel()
+                    propertyModelList.Add(new AmmunitionPropertyCrossReferenceModel()
                     {
                         Property = GetProperty(property.Name.Substring(0,spacePlace), fullPropertyModelList),
-                        ModifierValue = int.Parse(property.Name.Substring(spacePlace + 2))
+                        ModifierValue = int.Parse(property.Name.Substring(spacePlace + 1))
                     });
                 }
             }
             else
             {
-                propertyModelList.Add(new AmmunitionPropertyModel()
+                propertyModelList.Add(new AmmunitionPropertyCrossReferenceModel()
                 {
                     Property = GetProperty(property.Name, fullPropertyModelList),
                     ModifierValue = 0
@@ -179,7 +211,8 @@ public class ShipPartsService : IShipPartsService
     }
     private EquipmentPropertyModel GetProperty(string property, IEnumerable<EquipmentPropertyModel> propertyList)
     {
-        return propertyList.Where(feature => feature.Name.ToLower() == property.ToLower()).First();
+        var holder = propertyList.Where(feature => feature.Name.ToLower() == property.ToLower()).First();
+        return holder;
     }
     private EquipmentCategoryModel GetCategory(string category, IEnumerable<EquipmentCategoryModel> categoryList)
     {
@@ -187,6 +220,6 @@ public class ShipPartsService : IShipPartsService
     }
     private WeaponModel GetWeapon(string weapon, IEnumerable<WeaponModel> weaponList)
     {
-        return weaponList.Where(feature => feature.Name == weapon).First();
+        return weaponList.Where(feature => feature.Name.ToLower() == weapon.ToLower()).First();
     }
 }

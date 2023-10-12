@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class FeatureTypeMapping : BaseMapWithName<FeatureTypeModel>
 {
-    public FeatureTypeMapping() : base("ShipFeatureTypes")
+    public FeatureTypeMapping() : base("FeatureTypes")
     {
         Map(x => x.BaseCost);
     }

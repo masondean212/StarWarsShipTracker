@@ -48,7 +48,11 @@ public class ComponentRepository : BaseRepository, IComponentRepository
     }
     public async Task AddOrUpdateAmmunitionRepository(AmmunitionModel ammunition)
     {
-        await _session.SaveOrUpdateAsync(ammunition);
+        try { await _session.SaveOrUpdateAsync(ammunition); }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
     }
     public async Task AddOrUpdateWeaponPropertyRepository(AmmunitionModel ammunition)
     {
@@ -56,7 +60,12 @@ public class ComponentRepository : BaseRepository, IComponentRepository
     }
     public async Task<AmmunitionModel> GetAmmunitionFromName(string ammunition, WeaponModel weapon)
     {
-        return await _session.Query<AmmunitionModel>().FirstOrDefaultAsync(f => f.Name == ammunition && f.LaunchingWeapon == weapon);
+        try { return await _session.Query<AmmunitionModel>().FirstOrDefaultAsync(f => f.Name == ammunition && f.LaunchingWeapon == weapon); }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+            return null;
+        }
     }
     public async Task<IEnumerable<EquipmentCategoryModel>> GetCategoryListAsync()
     {

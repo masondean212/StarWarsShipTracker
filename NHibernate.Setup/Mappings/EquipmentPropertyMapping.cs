@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class EquipmentPropertyMapping : BaseMapWithName<EquipmentPropertyModel>
 {
-    public EquipmentPropertyMapping() : base("ShipEquipmentProperties")
+    public EquipmentPropertyMapping() : base("EquipmentProperties")
     {
         Map(x => x.Description);
     }

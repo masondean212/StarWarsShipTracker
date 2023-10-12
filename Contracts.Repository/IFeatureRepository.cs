@@ -4,7 +4,7 @@ namespace Contracts.Repository;
 
 public interface IFeatureRepository
 {
-    Task UpdateOrAddFeatures(ShipFeatureModel shipFeature);
+    Task UpdateOrAddFeatures(FeatureModel shipFeature);
     Task<IEnumerable<FeatureTypeModel>> GetTypeList();
-    Task<ShipFeatureModel> GetFeatureFromName(string featureName);
+    Task<FeatureModel> GetFeatureFromName(string featureName);
 }

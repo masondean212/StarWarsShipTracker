@@ -3,9 +3,9 @@ using NHibernate.Setup.Mappings.BaseMappings;
 
 namespace NHibernate.Setup.Mappings;
 
-public class ShipFeatureMapping : BaseMapWithName<ShipFeatureModel>
+public class ShipFeatureMapping : BaseMapWithName<FeatureModel>
 {
-    public ShipFeatureMapping() : base("ShipFeatures")
+    public ShipFeatureMapping() : base("Features")
     {
         References(x => x.FeatureType)
             .Column("FeatureTypeId")

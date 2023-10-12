@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class ArmorMapping : BaseMapWithName<ArmorModel>
 {
-    public ArmorMapping() : base("ShipArmors")
+    public ArmorMapping() : base("Armors")
     {
         Map(x => x.Cost);
         Map(x => x.MaxAC);

@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 internal class ReactorMapping : BaseMapWithName<ReactorModel>
 {
-    public ReactorMapping() : base("ShipReactors")
+    public ReactorMapping() : base("Reactors")
     {
         Map(x => x.Cost);
         Map(x => x.FuelUseModifier);

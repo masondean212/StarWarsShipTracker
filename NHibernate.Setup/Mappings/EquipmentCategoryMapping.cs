@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class EquipmentCategoryMapping : BaseMapWithName<EquipmentCategoryModel>
 {
-    public EquipmentCategoryMapping() : base("ShipEquipmentCategories")
+    public EquipmentCategoryMapping() : base("EquipmentCategories")
     {
     }
 }

@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class ShieldMapping : BaseMapWithName<ShieldModel>
 {
-    public ShieldMapping() : base("ShipShields")
+    public ShieldMapping() : base("Shields")
     {
         Map(x => x.Cost);
         Map(x => x.ShieldCapacity);

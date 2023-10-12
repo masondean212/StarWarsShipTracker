@@ -4,6 +4,6 @@ namespace Services.Interfaces;
 
 public interface IShipServices
 {
-    Task<IEnumerable<ShipDTO>> GetShipDetails();
+    Task<ShipDTO> GetShipDetails(int id);
     Task<IEnumerable<ShipListItemDTO>> GetShipList();
 }

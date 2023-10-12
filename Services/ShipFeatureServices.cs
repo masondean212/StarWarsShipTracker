@@ -23,7 +23,7 @@ public class ShipFeatureServices : IShipFeatureServices
             var matchingFeature = await _featureRepository.GetFeatureFromName(apiResult.Name);
             if (matchingFeature == null)
             {
-                await _featureRepository.UpdateOrAddFeatures(new ShipFeatureModel()
+                await _featureRepository.UpdateOrAddFeatures(new FeatureModel()
                 {
                     Name = apiResult.Name,
                     Grade = apiResult.Grade,

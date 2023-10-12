@@ -5,17 +5,18 @@ namespace NHibernate.Setup.Mappings;
 
 public class WeaponMapping : BaseMapWithName<WeaponModel>
 {
-    public WeaponMapping() : base("ShipWeapons")
+    public WeaponMapping() : base("Weapons")
     {
         Map(x => x.Cost);
         Map(x => x.Damage);
+        Map(x => x.DamageType);
         Map(x => x.SmallerShip);
         References(x => x.EquipmentCategory)
             .Column("EquipmentCategoryId")
             .ForeignKey("Id");
-        HasManyToMany(x => x.Properties)
-            .Table("ShipWeaponPropertiesCrossReference")
-            .ParentKeyColumn("ShipWeaponId")
-            .ChildKeyColumn("ShipEquipmentPropertyId");
+        HasMany(x => x.PropertiesCrossReference)
+            .KeyColumn("WeaponId")
+            .Cascade.AllDeleteOrphan()
+            .Inverse();
     }
 }

@@ -22,6 +22,8 @@ public class ShipModel : BaseModelWithName
     public virtual int RolledShieldPoints { get; set; }
     public virtual int CurrentShieldPoints { get; set; }
     public virtual int TemporaryShieldPoints { get; set; }
-    public virtual IEnumerable<ShipFeatureModel> InstalledFeatures { get; set; }
-    public virtual IEnumerable<SkillModel> Skills { get; set; }
+    public virtual IEnumerable<FeatureModel> InstalledFeatures { get; set; }
+    public virtual IEnumerable<WeaponModel> Weapons { get; set; }
+    public virtual IEnumerable<ShipAmmunitionCrossReferenceModel> AmmunitionCrossReference { get; set; }
+    public virtual IEnumerable<ShipSkillCrossReferenceModel> SkillCrossReference { get; set; }
 }

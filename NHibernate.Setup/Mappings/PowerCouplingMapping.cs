@@ -5,7 +5,7 @@ namespace NHibernate.Setup.Mappings;
 
 public class PowerCouplingMapping : BaseMapWithName<PowerCouplingModel>
 {
-    public PowerCouplingMapping() : base("ShipPowerCouplings")
+    public PowerCouplingMapping() : base("PowerCouplings")
     {
         Map(x => x.Cost);
         Map(x => x.CentralStorageCapacity);

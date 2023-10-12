@@ -10,7 +10,7 @@ public class FeatureRepository : BaseRepository, IFeatureRepository
     public FeatureRepository(ISession session) : base(session)
     {
     }
-    public async Task UpdateOrAddFeatures(ShipFeatureModel shipFeature)
+    public async Task UpdateOrAddFeatures(FeatureModel shipFeature)
     {
         await _session.SaveOrUpdateAsync(shipFeature);
     }
@@ -18,8 +18,8 @@ public class FeatureRepository : BaseRepository, IFeatureRepository
     {
         return await _session.Query<FeatureTypeModel>().ToListAsync();
     }
-    public async Task<ShipFeatureModel> GetFeatureFromName(string featureName)
+    public async Task<FeatureModel> GetFeatureFromName(string featureName)
     {
-        return await _session.Query<ShipFeatureModel>().FirstOrDefaultAsync(f => f.Name == featureName);
+        return await _session.Query<FeatureModel>().FirstOrDefaultAsync(f => f.Name == featureName);
     }
 }

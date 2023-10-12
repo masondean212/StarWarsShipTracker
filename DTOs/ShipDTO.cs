@@ -24,4 +24,6 @@ public class ShipDTO : BaseDTOWithName
     public int TemporaryShieldPoints { get; set; }
     public IEnumerable<ShipFeatureDTO>? InstalledFeatures { get; set; }
     public IEnumerable<SkillDTO>? Skills { get; set; }
+    public IEnumerable<WeaponDTO>? Weapons { get; set; }
+    public IEnumerable<ShipAmmunitionDTO>? Ammunition { get; set; }
 }

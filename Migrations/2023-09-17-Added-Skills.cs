@@ -31,14 +31,15 @@ public class _2023_09_17_Initial_Schema : Migration
         Insert.IntoTable("Skills").Row(new { Name = "Saving Throw", Ability = "Wisdom" });
         Insert.IntoTable("Skills").Row(new { Name = "Saving Throw", Ability = "Charisma" });
 
-        Create.Table("ShipSkillCrossference")
+        Create.Table("ShipSkillCrossReference")
             .WithColumn("Id").AsInt32().PrimaryKey().Identity().NotNullable()
             .WithColumn("ShipId").AsInt32().NotNullable()
-            .WithColumn("SkillId").AsInt32().NotNullable();
+            .WithColumn("SkillId").AsInt32().NotNullable()
+            .WithColumn("Proficiency").AsInt32().NotNullable();
     }
     public override void Down()
     {
-        Delete.Table("ShipSkillCrossference");
+        Delete.Table("ShipSkillCrossReference");
         Delete.Table("Skills");
     }
 }
