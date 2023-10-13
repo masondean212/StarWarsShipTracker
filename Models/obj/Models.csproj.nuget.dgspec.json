@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {}
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",

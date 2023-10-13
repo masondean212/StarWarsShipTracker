@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj": {}
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Configuration\\Configuration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Configuration\\Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Configuration\\Configuration.csproj",
         "projectName": "Configuration",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\Configuration.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Configuration\\Configuration.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Configuration\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,17 +28,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\NHibernate.Setup.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\Services.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj",
         "projectName": "Contracts.Repository",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -212,14 +212,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -273,14 +273,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\NHibernate.Setup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
         "projectName": "NHibernate.Setup",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\NHibernate.Setup.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\NHibernate.Setup\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\NHibernate.Setup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -297,14 +297,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj"
               }
             }
           }
@@ -352,14 +352,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj",
         "projectName": "Services.Interfaces",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -376,8 +376,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj"
               }
             }
           }
@@ -417,14 +417,14 @@
         }
       }
     },
-    "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj": {
+    "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services\\obj\\",
+        "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -441,17 +441,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\DTOs\\DTOs.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Models\\Models.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Models\\Models.csproj"
               },
-              "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj"
+              "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj"
               }
             }
           }

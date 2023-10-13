@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vnvvTb3eJ0THaZAz6tnhVB25nVOOLSNj4QdZ5VcZmZe9bXox6GtKLOfks7Bjxxb/gFkA/l8atrdWCABp89JlHQ==",
+  "dgSpecHash": "Pp192K4tjCZJ7ggH6kohMMsO3W8m4gwItjHatUe7CjhmVYu0BHUbbVX1KuvVddod3kUSGIReSfJe8x1PamS+2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Services.Interfaces\\Services.Interfaces.csproj",
+  "projectFilePath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Services.Interfaces\\Services.Interfaces.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

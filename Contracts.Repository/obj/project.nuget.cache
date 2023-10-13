@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kc9wuysoy9VZL4Xp3l8T61iEvja6B/ur3K25BpVEgP9b1jqMQU4tJ1RsOfquxB8LII6aUW8Vw57XsxSTdPI+Qg==",
+  "dgSpecHash": "VMZGEGZry+/meABICvLi/XL+vLqal/0S6snbdfuwSiZIvqV1lxDi0drHTtw4+HdnXar80SNN0FgJ+WDE/2n4kA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Contracts.Repository\\Contracts.Repository.csproj",
+  "projectFilePath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Contracts.Repository\\Contracts.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -8271,11 +8271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+      "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
       "projectName": "MigrationRunner",
-      "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+      "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
       "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\obj\\",
+      "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8292,8 +8292,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Migrations\\Migrations.csproj": {
-              "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Migrations\\Migrations.csproj"
+            "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Migrations\\Migrations.csproj": {
+              "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Migrations\\Migrations.csproj"
             }
           }
         }

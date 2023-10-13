@@ -78,9 +78,27 @@ public class ShipServices : IShipServices
         var weaponList = new List<WeaponDTO>();
         foreach (var weapon in weapons)
         {
-            weaponList.Add(_mapper.Map<WeaponDTO>(weapon));
+            var weaponDto = _mapper.Map<WeaponDTO>(weapon);
+            weaponDto.Properties = GetPropertyDtoListFromWeaponModel(weapon.PropertiesCrossReference);
+            weaponList.Add(weaponDto);
         }
         return weaponList;
+    }
+    private IEnumerable<EquipmentPropertyDTO> GetPropertyDtoListFromWeaponModel(IEnumerable<WeaponPropertyCrossReferenceModel> properties)
+    {
+        var propertyDtoList = new List<EquipmentPropertyDTO>();
+        foreach (var property in properties)
+        {
+            propertyDtoList.Add(new EquipmentPropertyDTO()
+            {
+                Id = property.Id,
+                Name = property.Property.Name,
+                Description = property.Property.Description,
+                EquipmentPropertyId = property.Property.Id,
+                ModifierValue = property.ModifierValue
+            });
+        }
+        return propertyDtoList;
     }
     private IEnumerable<SkillDTO> MapSkillList(IEnumerable<ShipSkillCrossReferenceModel> shipSkillCrossReferences)
     {

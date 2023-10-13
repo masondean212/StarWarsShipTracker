@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6dG2i383qK2AeMjSFFkeNve38Gw9WCxvPvwbWwe9eu27HuFltHJYsqIm52PBGN0qc0yqXFathLSBzgX5NhXLrg==",
+  "dgSpecHash": "sDhNKpKijiX8jAGxyp0xYHPbgmaaDcs0tFqoC88jZWklLe6JeRSMOkszAmJGOYKNym4yL67oxg9s2t99cTYzAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+  "projectFilePath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zelda\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
