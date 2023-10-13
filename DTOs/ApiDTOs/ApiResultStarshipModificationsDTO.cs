@@ -2,19 +2,19 @@
 
 public class ApiResultStarshipModificationsDTO
 {
-    public string Name { get; set; }
-    public int TypeEnum { get; set; }
-    public string Type { get; set; }
-    public IEnumerable<string> Prerequisites { get; set; }
-    public string PrerequisitesJson { get; set; }
-    public int Grade { get; set; }
-    public string Content { get; set; }
-    public int ContentTypeEnum { get; set; }
-    public string ContentType { get; set; }
-    public int ContentSourceEnum { get; set; }
-    public string ContentSource { get; set; }
-    public string PartitionKey { get; set; }
-    public string RowKey { get; set; }
-    public string Timestamp { get; set; }
-    public string ETag { get; set; }
+    public string name { get; set; }
+    public int typeEnum { get; set; }
+    public string type { get; set; }
+    public List<string> prerequisites { get; set; }
+    public string prerequisitesJson { get; set; }
+    public int grade { get; set; }
+    public string content { get; set; }
+    public int contentTypeEnum { get; set; }
+    public string contentType { get; set; }
+    public int contentSourceEnum { get; set; }
+    public string contentSource { get; set; }
+    public string partitionKey { get; set; }
+    public string rowKey { get; set; }
+    public DateTime timestamp { get; set; }
+    public string eTag { get; set; }
 }

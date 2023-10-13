@@ -39,6 +39,20 @@ public class ShipPartsService : IShipPartsService
         var shieldList = await _componentRepository.GetShieldListAsync();
         return shieldList.Select(shield => _mapper.Map<ShieldDTO>(shield));
     }
+    private EquipmentPropertyModel GetProperty(string property, IEnumerable<EquipmentPropertyModel> propertyList)
+    {
+        var holder = propertyList.Where(feature => feature.Name.ToLower() == property.ToLower()).First();
+        return holder;
+    }
+    private EquipmentCategoryModel GetCategory(string category, IEnumerable<EquipmentCategoryModel> categoryList)
+    {
+        return categoryList.Where(feature => feature.Name.ToLower() == category.ToLower()).First();
+    }
+    private WeaponModel GetWeapon(string weapon, IEnumerable<WeaponModel> weaponList)
+    {
+        return weaponList.Where(feature => feature.Name.ToLower() == weapon.ToLower()).First();
+    }
+    /*
     public async Task UpdateDatabaseWeaponsFromApi(IEnumerable<ApiShipWeaponDTO> ApiResults)
     {
         _unitOfWork.Begin();
@@ -209,17 +223,5 @@ public class ShipPartsService : IShipPartsService
         }
         return propertyModelList;
     }
-    private EquipmentPropertyModel GetProperty(string property, IEnumerable<EquipmentPropertyModel> propertyList)
-    {
-        var holder = propertyList.Where(feature => feature.Name.ToLower() == property.ToLower()).First();
-        return holder;
-    }
-    private EquipmentCategoryModel GetCategory(string category, IEnumerable<EquipmentCategoryModel> categoryList)
-    {
-        return categoryList.Where(feature => feature.Name.ToLower() == category.ToLower()).First();
-    }
-    private WeaponModel GetWeapon(string weapon, IEnumerable<WeaponModel> weaponList)
-    {
-        return weaponList.Where(feature => feature.Name.ToLower() == weapon.ToLower()).First();
-    }
+    */
 }

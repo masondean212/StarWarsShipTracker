@@ -9,6 +9,6 @@ public interface IShipPartsService
     Task<IEnumerable<ReactorDTO>> GetReactorList();
     Task<IEnumerable<PowerCouplingDTO>> GetPowerCouplingList();
     Task<IEnumerable<ShieldDTO>> GetShieldList();
-    Task UpdateDatabaseAmmunitionFromApi(IEnumerable<ApiShipAmmunitionDTO> ApiResults);
-    Task UpdateDatabaseWeaponsFromApi(IEnumerable<ApiShipWeaponDTO> ApiResults);
+    //Task UpdateDatabaseAmmunitionFromApi(IEnumerable<ApiShipAmmunitionDTO> ApiResults);
+    //Task UpdateDatabaseWeaponsFromApi(IEnumerable<ApiShipWeaponDTO> ApiResults);
 }

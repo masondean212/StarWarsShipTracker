@@ -14,6 +14,7 @@ public class ShipFeatureServices : IShipFeatureServices
         _featureRepository = featureRepository;
         _unitOfWork = unitOfWork;
     }
+    /*
     public async Task UpdateDatabaseFromApi(IEnumerable<ApiResultStarshipModificationsDTO> ApiResults)
     {
         _unitOfWork.Begin();
@@ -48,4 +49,5 @@ public class ShipFeatureServices : IShipFeatureServices
     {
         return featureTypes.Where(feature => feature.Name == featureString).First();
     }
+    */
 }

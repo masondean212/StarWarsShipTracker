@@ -2,13 +2,13 @@
 
 public class ApiShipAmmunitionDTO
 {
-    public string Name { get; set; }
-    public int Cost { get; set; }
-    public string Damage { get; set; }
-    public string Category { get; set; }
-    public string AssociatedWeapon { get; set; }
-    public int Weight { get; set; }
-    public string Special { get; set; }
-    public IEnumerable<ApiProperties> Properties { get; set; }
+    public string name { get; set; }
+    public int cost { get; set; }
+    public string damage { get; set; }
+    public string category { get; set; }
+    public string associatedWeapon { get; set; }
+    public int weight { get; set; }
+    public string special { get; set; }
+    public IEnumerable<ApiProperties>? properties { get; set; }
 
 }

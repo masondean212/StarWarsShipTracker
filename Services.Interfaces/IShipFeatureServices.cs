@@ -4,5 +4,5 @@ namespace Services.Interfaces;
 
 public interface IShipFeatureServices
 {
-    Task UpdateDatabaseFromApi(IEnumerable<ApiResultStarshipModificationsDTO> ApiResults);
+    //Task UpdateDatabaseFromApi(IEnumerable<ApiResultStarshipModificationsDTO> ApiResults);
 }
