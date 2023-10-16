@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Col, Row, Card } from 'reactstrap';
 import _ from 'lodash';
-import { getModifierFromScore } from '../utils/functions';
+import { getModifierFromScore, valueAddPlusIfPositive } from '../utils/functions';
 import GeneralSkillList from '../storage/GeneralSkillList';
 
 function getSkillListFromGeneral(scoreName, generalSkillsForAbility, shipSkillList) {
-    console.log(shipSkillList)
     return _.map(generalSkillsForAbility, skill => getSkillDetails(scoreName,skill, shipSkillList))
 }
 
@@ -60,13 +59,13 @@ function AbilityScore(scoreName, scoreValue, skillList, tier) {
                     <tbody>
                         <tr key={0}>
                             <th style={{ width: "5%" }}>{ProficiencyConvert(savingThrowDetails.proficiency)}</th>
-                            <th style={{ width: "5%" }}>{savingThrowDetails.proficiency * profBonus + value}</th>
+                            <th style={{ width: "5%" }}>{valueAddPlusIfPositive(savingThrowDetails.proficiency * profBonus + value)}</th>
                             <th style={{ width: "60%" }}>{"Saving Throw"}</th>
                         </tr>
                         {_.map(finalSkillList, (skill, i) =>
                             <tr key={i}>
                                 <td style={{ width: "5%" }}>{ProficiencyConvert(skill.proficiency)}</td>
-                                <td style={{ width: "5%" }}>{skill.proficiency * profBonus + value}</td>
+                                <td style={{ width: "5%" }}>{valueAddPlusIfPositive(skill.proficiency * profBonus + value)}</td>
                                 <td style={{ width: "60%" }}>{skill.name}</td>
                             </tr>)}
                     </tbody>
