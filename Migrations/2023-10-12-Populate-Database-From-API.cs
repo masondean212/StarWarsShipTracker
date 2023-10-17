@@ -1,12 +1,7 @@
 ﻿using DTOs.ApiDTOs;
 using FluentMigrator;
-using Microsoft.AspNetCore.Http;
-using Models;
-using StarWarsSessionTracker.Controllers;
 using System.Data.SqlClient;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Xml.Linq;
 
 namespace Migrations;
 [Migration(5)]

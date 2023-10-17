@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Row, Card } from 'reactstrap';
 import _ from 'lodash';
 import { getModifierFromScore, valueAddPlusIfPositive } from '../utils/functions';
@@ -9,7 +9,7 @@ function getSkillListFromGeneral(scoreName, generalSkillsForAbility, shipSkillLi
 }
 
 function getSkillDetails(scoreName,skill, shipSkillList) {
-    var shipSkill = _.find(shipSkillList, {name: skill, ability: scoreName})
+    let shipSkill = _.find(shipSkillList, {name: skill, ability: scoreName})
     if (shipSkill) {
         return shipSkill;
     }
@@ -20,16 +20,18 @@ function getSkillDetails(scoreName,skill, shipSkillList) {
 
 function AbilityScore(scoreName, scoreValue, skillList, tier) {
 
-    var profBonus = tier + 2;
-    var value = getModifierFromScore(scoreValue);
-    var savingThrowDetails = getSkillDetails(scoreName,"Saving Throw",skillList);
+    let profBonus = tier + 2;
+    let value = getModifierFromScore(scoreValue);
+    let savingThrowDetails = getSkillDetails(scoreName,"Saving Throw",skillList);
+    let finalSkillList;
     switch (scoreName) {
-        case "Strength": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.strength, skillList); break;
-        case "Dexterity": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.dexterity, skillList); break;
-        case "Constitution": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.constitution, skillList); break;
-        case "Intelligence": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.intelligence, skillList); break;
-        case "Wisdom": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.wisdom, skillList); break;
-        case "Charisma": var finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.charisma, skillList); break;
+        case "Strength": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.strength, skillList); break;
+        case "Dexterity": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.dexterity, skillList); break;
+        case "Constitution": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.constitution, skillList); break;
+        case "Intelligence": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.intelligence, skillList); break;
+        case "Wisdom": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.wisdom, skillList); break;
+        case "Charisma": finalSkillList = getSkillListFromGeneral(scoreName, GeneralSkillList.charisma, skillList); break;
+        default: break;
     }
 
 
@@ -38,6 +40,7 @@ function AbilityScore(scoreName, scoreValue, skillList, tier) {
             case 0: return "N";
             case 1: return "P";
             case 2: return "E";
+            default: return "N"
         }
     }
 

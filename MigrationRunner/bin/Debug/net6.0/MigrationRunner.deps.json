@@ -299,17 +299,6 @@
           }
         }
       },
-      "FluentNHibernate/3.2.1": {
-        "dependencies": {
-          "NHibernate": "5.3.3"
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/FluentNHibernate.dll": {
-            "assemblyVersion": "3.2.0.0",
-            "fileVersion": "3.2.1.0"
-          }
-        }
-      },
       "Iesi.Collections/4.0.4": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -319,14 +308,6 @@
           "lib/netstandard1.3/Iesi.Collections.dll": {
             "assemblyVersion": "4.0.0.4000",
             "fileVersion": "4.0.4.0"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.SpaProxy/6.0.19": {
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {
-            "assemblyVersion": "6.0.19.0",
-            "fileVersion": "6.0.1923.31806"
           }
         }
       },
@@ -498,13 +479,32 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.18051"
+          }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/2.0.1": {},
+      "Microsoft.Extensions.Logging.Abstractions/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.18051"
+          }
+        }
+      },
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/7.0.0": {
@@ -1554,20 +1554,6 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Configuration/1.0.0": {
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Contracts.Repository": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "NHibernate.Setup": "1.0.0",
-          "Services": "1.0.0",
-          "Services.Interfaces": "1.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "runtime": {
-          "Configuration.dll": {}
-        }
-      },
       "Contracts.Repository/1.0.0": {
         "dependencies": {
           "Models": "1.0.0",
@@ -1589,7 +1575,7 @@
         "dependencies": {
           "DTOs": "1.0.0",
           "FluentMigrator": "3.3.2",
-          "StarWarsSessionTracker": "1.0.0",
+          "Services": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -1602,19 +1588,6 @@
         },
         "runtime": {
           "Models.dll": {}
-        }
-      },
-      "NHibernate.Setup/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "Contracts.Repository": "1.0.0",
-          "DTOs": "1.0.0",
-          "FluentNHibernate": "3.2.1",
-          "Models": "1.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "runtime": {
-          "NHibernate.Setup.dll": {}
         }
       },
       "Services/1.0.0": {
@@ -1638,17 +1611,6 @@
         },
         "runtime": {
           "Services.Interfaces.dll": {}
-        }
-      },
-      "StarWarsSessionTracker/1.0.0": {
-        "dependencies": {
-          "Configuration": "1.0.0",
-          "DTOs": "1.0.0",
-          "Microsoft.AspNetCore.SpaProxy": "6.0.19",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "runtime": {
-          "StarWarsSessionTracker.dll": {}
         }
       }
     }
@@ -1813,26 +1775,12 @@
       "path": "fluentmigrator.runner.sqlserverce/3.3.2",
       "hashPath": "fluentmigrator.runner.sqlserverce.3.3.2.nupkg.sha512"
     },
-    "FluentNHibernate/3.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-10DjlRfyzzBrVLXoHRgBAtQjhwwt4iXCPROWSdm+TMc+lfrII27io6XZfT0k4ZG2vOSVKQHCtTr508nppaM/tA==",
-      "path": "fluentnhibernate/3.2.1",
-      "hashPath": "fluentnhibernate.3.2.1.nupkg.sha512"
-    },
     "Iesi.Collections/4.0.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.SpaProxy/6.0.19": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uEBCt1EjHMLpowJnAnZ5MVJ7S2gQdNwV7SPhJx95Gxim42nxM9xdTpAAf0ukn/+Um420JzlHJRGfJW7Fy2z2tw==",
-      "path": "microsoft.aspnetcore.spaproxy/6.0.19",
-      "hashPath": "microsoft.aspnetcore.spaproxy.6.0.19.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -2695,11 +2643,6 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Configuration/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Contracts.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2720,22 +2663,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "NHibernate.Setup/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Services.Interfaces/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "StarWarsSessionTracker/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

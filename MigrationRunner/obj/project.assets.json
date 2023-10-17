@@ -389,22 +389,6 @@
           "build/netstandard2.0/_._": {}
         }
       },
-      "FluentNHibernate/3.2.1": {
-        "type": "package",
-        "dependencies": {
-          "NHibernate": "5.3.3"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/FluentNHibernate.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/FluentNHibernate.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
       "Iesi.Collections/4.0.4": {
         "type": "package",
         "dependencies": {
@@ -420,21 +404,6 @@
           "lib/netstandard1.3/Iesi.Collections.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "Microsoft.AspNetCore.SpaProxy/6.0.19": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -2620,25 +2589,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Configuration/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Contracts.Repository": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "NHibernate.Setup": "1.0.0",
-          "Services": "1.0.0",
-          "Services.Interfaces": "1.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "compile": {
-          "bin/placeholder/Configuration.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Configuration.dll": {}
-        }
-      },
       "Contracts.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2672,7 +2622,7 @@
         "dependencies": {
           "DTOs": "1.0.0",
           "FluentMigrator": "3.3.2",
-          "StarWarsSessionTracker": "1.0.0",
+          "Services": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -2693,24 +2643,6 @@
         },
         "runtime": {
           "bin/placeholder/Models.dll": {}
-        }
-      },
-      "NHibernate.Setup/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "Contracts.Repository": "1.0.0",
-          "DTOs": "1.0.0",
-          "FluentNHibernate": "3.2.1",
-          "Models": "1.0.0",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "compile": {
-          "bin/placeholder/NHibernate.Setup.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/NHibernate.Setup.dll": {}
         }
       },
       "Services/1.0.0": {
@@ -2745,25 +2677,6 @@
         "runtime": {
           "bin/placeholder/Services.Interfaces.dll": {}
         }
-      },
-      "StarWarsSessionTracker/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Configuration": "1.0.0",
-          "DTOs": "1.0.0",
-          "Microsoft.AspNetCore.SpaProxy": "6.0.19",
-          "System.Data.SqlClient": "4.8.5"
-        },
-        "compile": {
-          "bin/placeholder/StarWarsSessionTracker.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/StarWarsSessionTracker.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -3161,28 +3074,6 @@
         "runtimes/win-x86/sqlcese40.dll"
       ]
     },
-    "FluentNHibernate/3.2.1": {
-      "sha512": "10DjlRfyzzBrVLXoHRgBAtQjhwwt4iXCPROWSdm+TMc+lfrII27io6XZfT0k4ZG2vOSVKQHCtTr508nppaM/tA==",
-      "type": "package",
-      "path": "fluentnhibernate/3.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "fluentnhibernate.3.2.1.nupkg.sha512",
-        "fluentnhibernate.nuspec",
-        "lib/net461/FluentNHibernate.dll",
-        "lib/net461/FluentNHibernate.pdb",
-        "lib/net461/FluentNHibernate.xml",
-        "lib/netcoreapp2.0/FluentNHibernate.dll",
-        "lib/netcoreapp2.0/FluentNHibernate.pdb",
-        "lib/netcoreapp2.0/FluentNHibernate.xml",
-        "lib/netstandard2.0/FluentNHibernate.dll",
-        "lib/netstandard2.0/FluentNHibernate.pdb",
-        "lib/netstandard2.0/FluentNHibernate.xml",
-        "logo-nuget.png"
-      ]
-    },
     "Iesi.Collections/4.0.4": {
       "sha512": "jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "type": "package",
@@ -3200,21 +3091,6 @@
         "lib/netstandard1.0/Iesi.Collections.xml",
         "lib/netstandard1.3/Iesi.Collections.dll",
         "lib/netstandard1.3/Iesi.Collections.xml"
-      ]
-    },
-    "Microsoft.AspNetCore.SpaProxy/6.0.19": {
-      "sha512": "uEBCt1EjHMLpowJnAnZ5MVJ7S2gQdNwV7SPhJx95Gxim42nxM9xdTpAAf0ukn/+Um420JzlHJRGfJW7Fy2z2tw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.spaproxy/6.0.19",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "build/Microsoft.AspNetCore.SpaProxy.targets",
-        "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll",
-        "microsoft.aspnetcore.spaproxy.6.0.19.nupkg.sha512",
-        "microsoft.aspnetcore.spaproxy.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -8209,11 +8085,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Configuration/1.0.0": {
-      "type": "project",
-      "path": "../Configuration/Configuration.csproj",
-      "msbuildProject": "../Configuration/Configuration.csproj"
-    },
     "Contracts.Repository/1.0.0": {
       "type": "project",
       "path": "../Contracts.Repository/Contracts.Repository.csproj",
@@ -8234,11 +8105,6 @@
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
     },
-    "NHibernate.Setup/1.0.0": {
-      "type": "project",
-      "path": "../NHibernate.Setup/NHibernate.Setup.csproj",
-      "msbuildProject": "../NHibernate.Setup/NHibernate.Setup.csproj"
-    },
     "Services/1.0.0": {
       "type": "project",
       "path": "../Services/Services.csproj",
@@ -8248,11 +8114,6 @@
       "type": "project",
       "path": "../Services.Interfaces/Services.Interfaces.csproj",
       "msbuildProject": "../Services.Interfaces/Services.Interfaces.csproj"
-    },
-    "StarWarsSessionTracker/1.0.0": {
-      "type": "project",
-      "path": "../StarWarsSessionTracker/StarWarsSessionTracker.csproj",
-      "msbuildProject": "../StarWarsSessionTracker/StarWarsSessionTracker.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8271,11 +8132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+      "projectUniqueName": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
       "projectName": "MigrationRunner",
-      "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+      "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
       "packagesPath": "C:\\Users\\zelda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\obj\\",
+      "outputPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zelda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8292,8 +8153,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Migrations\\Migrations.csproj": {
-              "projectPath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\Migrations\\Migrations.csproj"
+            "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Migrations\\Migrations.csproj": {
+              "projectPath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\Migrations\\Migrations.csproj"
             }
           }
         }

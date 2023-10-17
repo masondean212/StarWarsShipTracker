@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6dG2i383qK2AeMjSFFkeNve38Gw9WCxvPvwbWwe9eu27HuFltHJYsqIm52PBGN0qc0yqXFathLSBzgX5NhXLrg==",
+  "dgSpecHash": "04snGRD5S0q7BkNgerXkhupzJIPQBfgVRmrnDSHeJZj/mXF2PqY5JdGQzz3YzHEqvYPtlKm1ldSA51eknzhZBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\MigrationRunner\\MigrationRunner.csproj",
+  "projectFilePath": "C:\\Users\\zelda\\Desktop\\StarWarsTracker\\StarWarsShipTracker\\MigrationRunner\\MigrationRunner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zelda\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -26,9 +26,7 @@
     "C:\\Users\\zelda\\.nuget\\packages\\fluentmigrator.runner.sqlite\\3.3.2\\fluentmigrator.runner.sqlite.3.3.2.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\fluentmigrator.runner.sqlserver\\3.3.2\\fluentmigrator.runner.sqlserver.3.3.2.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\fluentmigrator.runner.sqlserverce\\3.3.2\\fluentmigrator.runner.sqlserverce.3.3.2.nupkg.sha512",
-    "C:\\Users\\zelda\\.nuget\\packages\\fluentnhibernate\\3.2.1\\fluentnhibernate.3.2.1.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
-    "C:\\Users\\zelda\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.19\\microsoft.aspnetcore.spaproxy.6.0.19.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
     "C:\\Users\\zelda\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

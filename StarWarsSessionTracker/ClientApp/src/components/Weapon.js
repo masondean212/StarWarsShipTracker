@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, Modal, ModalBody, ModalHeader, Button, Container } from 'reactstrap';
 import { getModifierFromScore, valueAddPlusIfPositive } from '../utils/functions';
-import _, { property } from 'lodash'
+import _ from 'lodash'
 
 function Weapon({ weaponList, strength, wisdom }) {
 

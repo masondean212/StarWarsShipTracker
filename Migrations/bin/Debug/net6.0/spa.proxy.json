@@ -1,8 +1,0 @@
-{
-"SpaProxyServer": {
-"ServerUrl": "https://localhost:44493",
-"LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\zelda\\source\\repos\\StarWarsSessionTracker\\StarWarsSessionTracker\\ClientApp\\",
-"MaxTimeoutInSeconds": "120"
-}
-}
