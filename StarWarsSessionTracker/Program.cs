@@ -1,10 +1,31 @@
+using System.Text;
 using Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+var tokenSecret = builder.Configuration.GetSection("AppSettings:Secret").Value;
+builder.Services.AddAuthentication(opt =>
+{
+    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(tokenSecret)),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 
 var connectionString = builder.Configuration.GetConnectionString("Connection");
 NHibernateConfiguration.Configure(builder.Services, connectionString);

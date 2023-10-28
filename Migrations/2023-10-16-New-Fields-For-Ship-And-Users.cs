@@ -28,13 +28,9 @@ public class _2023_10_16_New_Fields_For_Ship_And_Users : Migration
         Create.Table("Users")
             .WithColumn("Id").AsInt32().PrimaryKey().Identity()
             .WithColumn("Username").AsString(50).NotNullable()
-            .WithColumn("Email").AsString(100).NotNullable()
             .WithColumn("HashedPassword").AsString(500).NotNullable()
             .WithColumn("PasswordSalt").AsString(500).NotNullable()
-            .WithColumn("CreatedAt").AsDateTime().NotNullable()
-            .WithColumn("CreatedByUserId").AsInt32().ForeignKey("Users", "Id").Nullable()
-            .WithColumn("DeactivatedAt").AsDateTime().Nullable()
-            .WithColumn("DeactivatedByUserId").AsInt32().ForeignKey("Users", "Id").Nullable();
+            .WithColumn("DefaultShipId").AsInt32().ForeignKey("Ships","Id").NotNullable().WithDefaultValue(1);
 
         Create.Table("Roles")
             .WithColumn("Id").AsInt32().PrimaryKey().Identity()
@@ -50,7 +46,7 @@ public class _2023_10_16_New_Fields_For_Ship_And_Users : Migration
         var cryptoService = new CryptoService();
         var salt = cryptoService.GenerateSalt();
         var hash = cryptoService.HashPassword("admin", salt);
-        Execute.Sql($"INSERT INTO Users (Username, Email, HashedPassword, PasswordSalt, CreatedAt) VALUES ('admin', 'admin@example.com', '{hash}', '{salt}', GETDATE());");
+        Execute.Sql($"INSERT INTO Users (Username, HashedPassword, PasswordSalt) VALUES ('admin', '{hash}', '{salt}');");
         Execute.Sql("INSERT INTO UserRoles (UserId, RoleId) VALUES ((SELECT Id FROM Users WHERE Username = 'admin'), (SELECT Id FROM Roles WHERE Name = 'Admin'));");
     }
     public override void Down()
@@ -64,15 +60,15 @@ public class _2023_10_16_New_Fields_For_Ship_And_Users : Migration
     private void InsertIntoDamageTypes()
     {
         var table = Insert.IntoTable("DamageTypes");
-        table.Row(new { Name = "Acid", Description = "Acid damage is less effective against shields,\r\ndealing only half damage to shields." });
-        table.Row(new { Name = "Cold", Description = "Cold damage is less effective against shields,\r\ndealing only half damage to shields." });
+        table.Row(new { Name = "Acid", Description = "Acid damage is less effective against shields,dealing only half damage to shields." });
+        table.Row(new { Name = "Cold", Description = "Cold damage is less effective against shields,dealing only half damage to shields." });
         table.Row(new { Name = "Energy", Description = "The most common type of damage, it deals normal damage to hull and shields." });
-        table.Row(new { Name = "Fire", Description = "Fire damage is less effective against shields,\r\ndealing only half damage to shields." });
+        table.Row(new { Name = "Fire", Description = "Fire damage is less effective against shields,dealing only half damage to shields." });
         table.Row(new { Name = "Force", Description = "Deals normal damage to hull and shields." });
-        table.Row(new { Name = "Ion", Description = "Ion damage is less effective against hull,\r\ndealing only half damage to hull. Ion damage cannot destroy ships. Instead, ion damage that reduces a ship to zero hull points causes the ship to become disabled and stable." });
-        table.Row(new { Name = "Kinetic", Description = "Deals normal damage to hull and shields.\r\nAdditionally, when ships collide with each other or debris, they deal kinetic damage." });
-        table.Row(new { Name = "Lightning", Description = "Lightning damage is less effective against hull,\r\ndealing only half damage to hull." });
-        table.Row(new { Name = "Necrotic", Description = "Necrotic damage is less effective against ships,\r\ndealing only half damage to hull and shields." });
+        table.Row(new { Name = "Ion", Description = "Ion damage is less effective against hull,dealing only half damage to hull. Ion damage cannot destroy ships. Instead, ion damage that reduces a ship to zero hull points causes the ship to become disabled and stable." });
+        table.Row(new { Name = "Kinetic", Description = "Deals normal damage to hull and shields.Additionally, when ships collide with each other or debris, they deal kinetic damage." });
+        table.Row(new { Name = "Lightning", Description = "Lightning damage is less effective against hull,dealing only half damage to hull." });
+        table.Row(new { Name = "Necrotic", Description = "Necrotic damage is less effective against ships,dealing only half damage to hull and shields." });
         table.Row(new { Name = "Poison", Description = "Poison damage is ineffective against ships, dealing no damage to hull or shields." });
         table.Row(new { Name = "Psychic", Description = "Psychic damage is ineffective against ships, dealing no damage to hull or shields." });
         table.Row(new { Name = "Sonic", Description = "Deals normal damage to hull and shields when in an atmosphere, but does no damage in space." });

@@ -1,4 +1,5 @@
-﻿using Contracts.Repository;
+﻿using System.Data;
+using Contracts.Repository;
 using Models;
 using NHibernate;
 using NHibernate.Linq;
@@ -16,8 +17,12 @@ public class UserRepository : BaseRepository, IUserRepository
         return await _session.Query<UserModel>().ToListAsync();
     }
 
-    public async Task<UserModel> GetByEmailAsync(string email)
+    public async Task<UserModel> GetByUserAsync(string username)
     {
-        return await _session.Query<UserModel>().SingleOrDefaultAsync(u => u.Email == email);
+        return await _session.Query<UserModel>().SingleOrDefaultAsync(u => u.Username == username);
+    }
+    public async Task<List<RoleModel>> GetRolesAsync()
+    {
+        return await _session.Query<RoleModel>().ToListAsync();
     }
 }

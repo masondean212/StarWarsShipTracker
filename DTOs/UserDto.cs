@@ -2,10 +2,10 @@
 
 namespace DTOs;
 
-public class UserDto : BaseDTO
+public class UserDTO : BaseDTO
 {
     public string Username { get; set; }
-    public string Email { get; set; }
-    public IList<RoleDto> Roles { get; set; }
+    public int DefaultShipId { get; set; }
+    public IList<RoleDTO> Roles { get; set; }
 
 }

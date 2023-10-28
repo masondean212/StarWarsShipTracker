@@ -24,7 +24,7 @@ public class ShipController : ControllerBase
         return shipDTO;
     }
     [HttpGet("[action]")]
-    public async Task<IEnumerable<ShipListItemDTO>> GetShipList()
+    public async Task<IEnumerable<ShipSummaryDTO>> GetShipList()
     {
         return await _shipServices.GetShipList();
     }

@@ -7,13 +7,10 @@ function AdminShip() {
     return (<>
         <ul className="navbar-nav flex-grow">
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/admin/add-ship">Add Ship</NavLink>
+                <NavLink tag={Link} className="text-dark" to="/admin/ship-list">Manage Ships</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/admin/add-ship-feature">Add Features To Ship</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/admin/update-database">Update Database</NavLink>
+                <NavLink tag={Link} className="text-dark" to="/admin/user-list">Manage Users</NavLink>
               </NavItem>
             </ul>
     </>);

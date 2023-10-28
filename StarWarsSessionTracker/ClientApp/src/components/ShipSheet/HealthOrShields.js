@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import { getModifierFromScore } from '../utils/functions';
+import { getModifierFromScore } from '../../utils/functions';
 
 function HealthOrShields({ partDetails, currentStats, abilityScore, type }) {
 

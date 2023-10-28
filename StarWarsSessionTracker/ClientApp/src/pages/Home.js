@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import api from '../utils/api';
 import _ from 'lodash';
 import { Col, Row } from 'reactstrap';
-import AbilityScores from '../components/AbilityScores';
-import ArmorBonus from '../components/ArmorBonus';
-import HealthOrShields from '../components/HealthOrShields';
-import Weapon from '../components/Weapon';
+import AbilityScores from '../components/ShipSheet/AbilityScores';
+import ArmorBonus from '../components/ShipSheet/ArmorBonus';
+import HealthOrShields from '../components/ShipSheet/HealthOrShields';
+import Weapon from '../components/ShipSheet/Weapon';
 
 function Home() {
 

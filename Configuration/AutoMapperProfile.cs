@@ -18,5 +18,7 @@ public class AutoMapperProfile : Profile
         CreateMap<FeatureTypeModel, FeatureTypeDTO>();
         CreateMap<WeaponModel, WeaponDTO>();
         CreateMap<WeaponModel, WeaponDTO>();
+        CreateMap<UserModel, UserDTO>();
+        CreateMap<RoleModel, RoleDTO>();
     }
 }

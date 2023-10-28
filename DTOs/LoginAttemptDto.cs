@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DTOs;
 
-namespace E3Starter.Dtos;
-
-public class LoginAttemptDto
+public class LoginAttemptDTO
 {
-    public string Email { get; set; }
+    public string User { get; set; }
     public string Password { get; set; }
 }

@@ -13,7 +13,12 @@ public class BaseRepository : IRepositoryBase
     }
     public async Task SaveAsync<T>(T t)
     {
-        await _session.SaveAsync(t);
+        try { await _session.SaveAsync(t); }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
+
     }
     public async Task<T> GetAsync<T>(int id)
     {

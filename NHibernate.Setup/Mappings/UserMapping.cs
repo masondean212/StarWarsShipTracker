@@ -6,8 +6,8 @@ public class UserMapping : BaseMap<UserModel>
     public UserMapping() : base("Users")
     {
         Map(x => x.Username);
-        Map(x => x.Email);
         Map(x => x.HashedPassword);
+        Map(x => x.DefaultShipId);
         Map(x => x.PasswordSalt);
         HasManyToMany(x => x.Roles)
             .Cascade.All()

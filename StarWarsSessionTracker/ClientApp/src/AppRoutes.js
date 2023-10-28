@@ -2,11 +2,12 @@ import ShipInventory from "./pages/ShipInventory";
 import ShipList from "./pages/ShipList";
 import Home from "./pages/Home";
 import AdminShip from "./pages/AdminShips"
-import AddShip from "./pages/AddShip"
+import ModifyShip from "./pages/ModifyShip"
 import AddShipFeature from "./pages/AddShipFeature"
-import CheckDatabase from "./pages/CheckDatabase"
+import UserList from "./pages/UserList"
+import UserForm from "./pages/UserForm"
 
-const AppRoutes = [
+export const AppRoutes = [
   {
     index: true,
     element: <Home />
@@ -17,24 +18,33 @@ const AppRoutes = [
   },
   {
     path: '/ship-list',
-    element: <ShipList />
-  },
+    element: <ShipList adminRoute={false}/>
+  }
+];
+
+export const AdminRoutes = [
   {
     path: '/admin',
     element: <AdminShip />
   },
   {
-    path: '/admin/add-ship',
-    element: <AddShip />
+    path: '/admin/edit-ship/:shipId',
+    element: <ModifyShip />
   },
   {
     path: '/admin/add-ship-feature',
     element: <AddShipFeature />
   },
   {
-    path: '/admin/update-database',
-    element: <CheckDatabase />
+    path: '/admin/user-list',
+    element: <UserList />
+  },
+  {
+    path: '/admin/create-user',
+    element: <UserForm />
+  },
+  {
+    path: '/admin/ship-list',
+    element: <ShipList adminRoute={true}/>
   }
 ];
-
-export default AppRoutes;

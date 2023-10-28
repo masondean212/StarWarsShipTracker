@@ -22,13 +22,14 @@ public class ShipServices : IShipServices
         return MapToShipDTO(shipModel);
     }
 
-    public async Task<IEnumerable<ShipListItemDTO>> GetShipList()
+    public async Task<IEnumerable<ShipSummaryDTO>> GetShipList()
     {
         var shipList = await _shipRepository.GetAllAsync();
-        return shipList.Select(ship => new ShipListItemDTO()
+        return shipList.Select(ship => new ShipSummaryDTO()
                                         {
                                             Id = ship.Id,
                                             Name = ship.Name,
+                                            Tier = ship.Tier
                                         }).ToList();
     }
     private ShipDTO MapToShipDTO(ShipModel ship)

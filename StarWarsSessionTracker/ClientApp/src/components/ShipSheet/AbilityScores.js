@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row, Card } from 'reactstrap';
 import _ from 'lodash';
-import { getModifierFromScore, valueAddPlusIfPositive } from '../utils/functions';
-import GeneralSkillList from '../storage/GeneralSkillList';
+import { getModifierFromScore, valueAddPlusIfPositive } from '../../utils/functions';
+import GeneralSkillList from '../../storage/GeneralSkillList';
 
 function getSkillListFromGeneral(scoreName, generalSkillsForAbility, shipSkillList) {
     return _.map(generalSkillsForAbility, skill => getSkillDetails(scoreName,skill, shipSkillList))

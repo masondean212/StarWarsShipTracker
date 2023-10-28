@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
-import { getModifierFromScore } from '../utils/functions';
+import { getModifierFromScore } from '../../utils/functions';
 function ArmorBonus({ armorPartDetails , dexterityScore }) {
 
     function getArmorClass() {

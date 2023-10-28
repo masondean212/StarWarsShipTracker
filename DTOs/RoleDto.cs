@@ -2,6 +2,6 @@
 
 namespace DTOs;
 
-public class RoleDto : BaseDTOWithName
+public class RoleDTO : BaseDTOWithName
 {
 }
